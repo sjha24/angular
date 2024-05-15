@@ -1,0 +1,58 @@
+<div class="ecart-product-details-info scroll">
+    <div class="ecart-product-details-close">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+    <div class="ecart-product-image">
+        <img [src]="product.imageUrl" alt="">
+    </div>
+    <div class="ecart-product-details">
+        <div class="ecart-product-details-name">
+            <h2>{{product.name}}</h2>
+        </div>
+        <div class="ecart-product-detail-gbc">
+            <span>{{product.gender}}</span>
+            <span>{{product.brand}}</span>
+            <span>{{product.category}}</span>
+        </div>
+        <div class="ecart-product-detail-price">
+            <p>
+                <b>Price each pair:</b>
+                <span style="background-color: red color:white"><s>{{product.price}}</s></span>
+                <span style="background-color: green color:white"><s>{{product.discountPrice}}</s></span>(Inclusive all tax)
+            </p>
+        </div>
+        <div class="ecart-product-details-size">
+            <div style="padding:5px 0px;border-bottom: #ccc 2px solid">
+                <h4>Avalable size</h4>
+            </div>
+            <div style="margin-top: 20px">
+                <span class="ecart-product-detail-available-size" *ngfor="size of product.size">7</span>
+                <span class="ecart-product-detail-available-size"></span>
+                <span class="ecart-product-detail-available-size">8</span>
+                <span class="ecart-product-detail-available-size">9</span>
+            </div>
+        </div>
+        <div class="ecart-product-detail-color">
+            <div style="padding: 5px 0px;border-bottom: #ccc 2px solid">
+                <h4>Avaliable color</h4>
+            </div>
+            <div style="margin-top:20px;">
+                <span class="ecart-product-detail-available-size" style="background-color: red;"></span>
+                <span class="ecart-product-detail-available-size" style="background-color: green;"></span>
+                <span class="ecart-product-detail-available-size" style="background-color: black;"></span>
+                <span class="ecart-product-detail-available-size" style="background-color: blue;"></span>
+            </div>
+        </div>
+        <div class="ecart-product-detail-desc">
+            <h4>Product Desciption</h4>
+        </div>
+        <div style="margin-top:20px">
+            <p>Description</p>
+        </div> 
+    </div>
+    <div class="ecart-product-detail-addToCart">
+        <button class="btn-add-to-cart">Add to ecart-product-detail-addToCart</button>
+    </div>
+</div>
+
+<div class="overlay"></div>

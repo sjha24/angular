@@ -1,0 +1,49 @@
+<div class="product-list">
+    
+    <!-- <p>Name : {{product.name}}</p>
+    <p>Price : {{product.price}}</p>
+    <p>Color : {{product.color}}</p>
+    <p>Discounted Percent: {{product.discountPercent}}</p>
+    <p>Discounted Price : {{getDiscountedPrice()}}</p>
+    <p>Stock : {{product.stock > 0 ? 'only '+product.stock + ' Item left' : ' Not in Stock' }}</p>
+    <button [disabled] = "!(product.stock > 0)" >Buy Now</button>
+    <button (click)="decrementCart()">-</button>
+    <span>{{ addToCart }}</span>
+    <button (click)="incrementCart()">+</button>
+    <input (input)="onNameChange($event)"/>
+    <p>Name : {{name}}</p> -->
+
+    <!-- *ngForm dirictery is a structural diricatery -->
+    <app-search (onSearchTextChanged)="setSearchText($event)"></app-search>
+    <app-producr-list [searchText]="searchText" #productListComponrnt></app-producr-list>
+    <product-details *ngIf="productListComponrnt.selectedProduct" [productListComponent]="productListComponent"></product-details>
+
+<!--     
+    <div *ngFor="let item of [1,3,4,5,6,6]">
+        <p>Current element of array is : {{item}}</p>
+    </div> -->
+
+    <!-- <div *ngFor="let item of listOfString">
+        <p>Current element of array is : {{item}}</p>
+    </div> -->
+    <div class="ecart-featured-product">
+        <div class="ecart-featured-products-heading">
+            <h1>Lattest arival is popular brands</h1>
+        </div>
+        <feature-brands>
+            <h3 class="title">New Arrival in Nike</h3>
+            <button class="call-to-action">Show new Arrivals in Nike</button>
+        </feature-brands>
+        <feature-brands>
+            <h3 class="title">New Arrival in Puma</h3>
+            <button class="call-to-action">Show new Arrivals in Puma</button>
+        </feature-brands>
+        <feature-brands>
+            <h3 class="title">New Arrival in Reebok</h3>
+            <button class="call-to-action">Show new Arrivals in Reebok</button>
+        </feature-brands>
+    </div>
+</div> 
+
+
+<!-- property binding [value]="name" -->

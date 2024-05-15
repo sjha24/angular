@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Fira+Sans:wght@200;300&family=Lato:ital,wght@1,900&family=Lugrasimo&family=Montserrat:ital@1&family=Roboto+Mono:wght@300&family=Saira+Extra+Condensed:wght@200;500;600&family=Source+Code+Pro:wght@300&display=swap');
+/* @import "~../node_modules/bootstrap/dist/css/bootstrap.min.css"; */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.body{
+    font-family: "Lugrasimo", cursive;
+}
